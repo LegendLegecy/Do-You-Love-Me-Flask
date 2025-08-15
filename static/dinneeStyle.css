@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+*{
+ top: 0;
+ left: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: "Edu AU VIC WA NT Hand", cursive;
+
+}
+body{
+    height: 100%;
+    margin: 0;
+    background: url(bg3.jpg)no-repeat center center fixed;
+    background-size: cover;
+    scroll-behavior: none;
+}
+
+main{
+    max-width: 1300px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+        
+}
+.container{
+    flex-direction: column;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:160px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: rgb(49, 3, 3);
+    display: flex;
+}
+
+.button{
+    display: flex;
+    flex-direction:row;
+    padding: 34px;
+    gap: 23px;
+
+}
+button{
+    border-radius: 23px;
+    width: 134px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+}
+button:hover{
+    color: yellow;
+}
+
+@keyframes vibrate {
+    0%{transform: translateX(0);}
+    25%{transform: translateX(-5px);}
+    50%{transform: translateX(5px);}
+    75%{transform: translateX(-5px);}
+    100%{transform: translateX(0);}
+    
+}
+.vibrate{
+    animation: vibrate 0.2s linear;
+}

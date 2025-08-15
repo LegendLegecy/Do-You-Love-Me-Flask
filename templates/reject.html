@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='dinneeStyle.css') }}">
+    <title>Do You Love Me</title>
+</head>
+<body>
+   <style>
+    h1{
+        padding: 10px;
+        text-align: center
+    }
+    img{
+        border-radius: 23px;
+    }
+   </style>
+    <main>
+        <div class="container">
+            <div class="text"> <h1 id="title">
+             Ahh I know That You Don't Deserve That Handsome Guy 
+            </h1>
+           </div>
+           
+            <div class="GIF" id="gif">
+                <img src="{{ url_for('static', filename='reject.jpeg') }}" width="269px">
+            </div>
+            <div class="button">
+                <button id="NextF">Next</button>
+               
+            </div>
+        </div>
+       
+    </main>
+    <script>
+        document.getElementById("NextF").addEventListener("click", function() {
+            window.location.href = "thanks";
+        });
+    </script>
+</body>
+</html>
